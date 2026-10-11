@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0F4C91" />
+  <title>COS 301 | NotebookLM Question Bank</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="notebook.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Return to original mock exam">
+      <span class="brand-mark">C</span>
+      <span class="brand-copy"><strong>COS 301</strong><small>NOTEBOOKLM BANK</small></span>
+    </a>
+    <div class="topbar-course"><span class="course-dot"></span> COS 301 <span class="muted">/</span> Software Engineering</div>
+    <div class="topbar-actions">
+      <button class="button button-quiet" id="exportNotebook">Export answers <span aria-hidden="true">↗</span></button>
+      <a class="button button-outline" href="index.html">Original mock exam</a>
+    </div>
+  </header>
+  <main class="notebook-shell">
+    <section class="notebook-intro">
+      <div class="breadcrumb"><a href="index.html">Study space</a> <span>/</span> NotebookLM question bank</div>
+      <div class="intro-line"><div>
+        <span class="eyebrow">ADDITIONAL PRACTICE PAPER</span>
+        <h1>Per-lecture comprehensive question bank</h1>
+        <p>60 questions across 12 lecture modules, with worked solutions from the supplied marking memorandum. Try each question first, then reveal the model answer and compare.</p>
+      </div><div class="notebook-stats"><strong id="notebookProgress">0%</strong><span id="notebookProgressText">0 of 60 answered</span></div></div>
+      <div class="progress-track"><div class="progress-fill" id="notebookProgressFill"></div></div>
+      <div class="notebook-toolbar">
+        <label class="search-label" for="questionSearch">Find a question or topic</label>
+        <input id="questionSearch" type="search" placeholder="Search modules and questions…" />
+        <button class="button button-outline" id="toggleUnanswered">Show unanswered</button>
+        <button class="button button-quiet" id="clearNotebook">Clear NotebookLM answers</button>
+      </div>
+      <p class="source-note"><strong>Study tip:</strong> Attempt each question before revealing its model answer. The solutions are based on the marking memorandum you supplied; diagrams and calculations are included where provided.</p>
+      <div id="notebookModules" class="notebook-modules"></div>
+      <footer class="page-footer"><span>COS 301 <span class="footer-dot">·</span> NotebookLM practice</span><span>Answers save locally in this browser</span></footer>
+    </section>
+  </main>
+  <div class="toast" id="notebookToast" role="status" aria-live="polite"></div>
+  <script src="notebook-questions.js"></script>
+  <script src="notebook-answers.js"></script>
+  <script src="notebook.js"></script>
+</body>
+</html>
